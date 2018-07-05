@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="initialize_particles" name="init_particles" type="init_particles_caller.py" output="screen"/>
+</launch>
