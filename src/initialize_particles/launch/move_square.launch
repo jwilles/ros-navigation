@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="initialize_particles" name="move_square" type="move_square.py" output="screen"/>
+</launch>
