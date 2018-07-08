@@ -1,8 +1,6 @@
 controller_frequency: 15.0
 recovery_behaviour_enabled: true
 
-base_global_planner: "carrot_planner/CarrotPlanner"
-
 NavfnROS:
   allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
   default_tolerance: 0.1 # A tolerance on the goal point for the planner.
