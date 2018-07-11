@@ -1,0 +1,8 @@
+<launch>
+    <arg name="scan_topic" default="/hokuyo_base/scan" />
+    
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <rosparam file="$(find summit_mapping)/params/gmapping_params.yaml" command="load" />
+        <remap from="scan" to="$(arg scan_topic)"/>
+    </node>
+</launch>
