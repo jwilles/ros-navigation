@@ -1,0 +1,4 @@
+use_map_topic: true
+odom_model_type: diff
+odom_frame_id: odom
+
