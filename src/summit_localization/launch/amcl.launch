@@ -3,7 +3,7 @@
     <arg name="map_file" default="$(find summit_mapping)/maps/summit_map.yaml"/>
     <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/>
     
-    <node name="pose_recorder" pkg="summit_mapping" type="record_pose_service.py" />
+    <!--<node name="pose_recorder" pkg="summit_mapping" type="record_pose_service.py" />-->
 
     <arg name="scan_topic" default="/hokuyo_base/scan"/>
     
