@@ -8,7 +8,7 @@ from send_coord_action_client import SendCoordinates
 
 class GetCoordService:
     def __init__(self):
-        self.get_coord_service = rospy.ServiceProxy('/get_coordinates', GetCoord, self.callback)
+        self.get_coord_service = rospy.Service('/get_coordinates', GetCoord, self.callback)
         
         
     def callback(self, req):
@@ -29,7 +29,7 @@ class GetCoordService:
         
         res.navigation_successfull = True
         
-        return response
+        return res
         
 
         

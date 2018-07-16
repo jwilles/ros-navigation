@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="summit_nav" type="get_coord_service.py" name="get_coordinates" output="screen" />
+</launch>
