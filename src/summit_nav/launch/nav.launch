@@ -1,3 +1,6 @@
 <launch>
+
+    <include file="$(find summit_path_planning)/launch/move_base_v2.launch" />
+    
     <node pkg="summit_nav" type="get_coord_service.py" name="get_coordinates" output="screen" />
 </launch>
